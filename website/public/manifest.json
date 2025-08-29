@@ -1,0 +1,14 @@
+{
+  "name": "Qurae",
+  "icons": [
+    {
+      "src": "/icons/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 32x32"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/"
+}

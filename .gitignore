@@ -1,0 +1,8 @@
+website/.next
+website/node_modules
+out
+*/.DS_Store
+.DS_Store
+*.tgz
+node_modules
+.env
