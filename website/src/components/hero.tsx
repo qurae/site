@@ -22,7 +22,7 @@ export const Hero = () => {
           {/* Light mode logo */}
           <img 
             alt="Qurae Logo" 
-            src="/logos/logo.svg" 
+            src="./logos/logo.svg" 
             className={cn(
               "h-16 w-auto transition-opacity duration-200",
               mounted && resolvedTheme === "dark" ? "opacity-0 absolute" : "opacity-100"
@@ -31,7 +31,7 @@ export const Hero = () => {
           {/* Dark mode logo */}
           <img 
             alt="Qurae Logo" 
-            src="/logos/logo-white.svg" 
+            src="./logos/logo-white.svg" 
             className={cn(
               "h-16 w-auto transition-opacity duration-200",
               mounted && resolvedTheme === "dark" ? "opacity-100" : "opacity-0 absolute"
