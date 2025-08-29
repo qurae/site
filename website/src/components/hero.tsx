@@ -38,10 +38,10 @@ export const Hero = () => {
             )}
           />
         </div>
-        <div className="text-center">
+        <div className="text-left max-w-4xl mx-auto">
           <p
             className={cn(
-              "text-gray-500 dark:text-white text-lg mt-10",
+              "text-black dark:text-white text-lg leading-relaxed mb-6",
               font.className
             )}
           >
@@ -49,11 +49,20 @@ export const Hero = () => {
           </p>
           <p
             className={cn(
-              "text-black dark:text-white text-lg mt-10",
+              "text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-8",
               font.className
             )}
           >
-            <a href="mailto:hello@qurae.co.uk">hello@qurae.co.uk</a>
+            Through trusted open-source tools and proven frameworks, we enable data strategy, federation, and insight across silos. Our team has a track record of unlocking the value of health data for research, machine learning, and real-world decision-making. 
+            Always with security, control, and governance at the core.
+          </p>
+          <p
+            className={cn(
+              "text-black dark:text-white text-lg",
+              font.className
+            )}
+          >
+            <a href="mailto:hello@qurae.co.uk" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">hello@qurae.co.uk</a>
           </p>
           
         </div>
