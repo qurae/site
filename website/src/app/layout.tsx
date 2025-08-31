@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Something new is emerging from the University of Nottingham, led by the team that has delivered programmes with the NHS, Health Data Research UK, DARE UK, and the NIHR Nottingham Biomedical Research Centre.",
   icons: {
     icon: "./icons/favicon.ico",
-    apple: "./icons/apple-touch-icon.png",
+    apple: "./icons/apple-icon.png",
   },
   openGraph: {
     title: "Qurae",
     description: "Something new is emerging from the University of Nottingham, led by the team that has delivered programmes with the NHS, Health Data Research UK, DARE UK, and the NIHR Nottingham Biomedical Research Centre.",
-    images: "./images/og-image.png",
+    images: "/images/og-image.png",
   },
   manifest: "/manifest.json",
 };
