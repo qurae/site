@@ -53,7 +53,10 @@ export const Hero = () => {
               font.className
             )}
           >
-            We’ve worked on programmes with the NHS, HDR UK, DARE UK, and NIHR.
+            Something new is emerging from the University of Nottingham from the team that has led many
+            programmes in the NHS, Health Data Research UK, DARE UK and the NIHR Nottingham Biomedical Research Centre.
+
+            A rare opportunity to help shape the future direction of this emerging company.
           </p>
           <p
             className={cn(
