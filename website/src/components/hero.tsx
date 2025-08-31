@@ -25,9 +25,9 @@ const teamMembers = [
 
 export const Hero = () => {
   return (
-    <div className="px-6 lg:px-8">
-      <div className="mx-auto max-w-2xl lg:py-12">
-        <div className={cn("text-left max-w-4xl mx-auto md:mt-32 mb-8", font.className)}>
+    <div className="">
+      <div className="mx-auto max-w-2xl">
+        <div className={cn("text-left max-w-4xl mx-auto", font.className)}>
           <Heading>
             <span className="font-semibold">Qurae</span>
           </Heading>
