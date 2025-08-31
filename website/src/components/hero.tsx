@@ -9,13 +9,13 @@ const font = Gabarito({ weight: ["400", "500", "600", "700", "800", "900"], subs
 const teamMembers = [
   {
     name: "Professor Phil Quinlan",
-    image: "/images/phil.png",
+    image: "./images/phil.png",
     alt: "Phil Quinlan",
     linkedinUrl: "https://www.linkedin.com/in/phil-quinlan-b359a2b/"
   },
   {
     name: "Andy Rae",
-    image: "/images/andy.jpg",
+    image: "./images/andy.jpg",
     alt: "Andy Rae",
     linkedinUrl: "https://www.linkedin.com/in/andyraeio/"
   }

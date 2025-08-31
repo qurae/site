@@ -6,7 +6,7 @@ interface EmailLinkProps {
 export const EmailLink = ({ email, children }: EmailLinkProps) => (
   <a 
     href={`mailto:${email}`} 
-    className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors text-black dark:text-white font-semibold underline underline-offset-8"
+    className="text-white font-semibold underline underline-offset-4"
   >
     {children || email}
   </a>
