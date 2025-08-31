@@ -7,7 +7,7 @@ const nextConfig = {
   },
   distDir: "out",
   output: "export",
-  basePath: "/site",
+  basePath: "",
   assetPrefix: "",
 };
 
