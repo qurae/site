@@ -8,16 +8,18 @@ const font = Gabarito({ weight: ["400", "500", "600", "700", "800", "900"], subs
 
 const teamMembers = [
   {
-    name: "Professor Phil Quinlan",
+    name: "Phil Quinlan",
     image: "./images/phil.png",
     alt: "Phil Quinlan",
-    linkedinUrl: "https://www.linkedin.com/in/phil-quinlan-b359a2b/"
+    linkedinUrl: "https://www.linkedin.com/in/phil-quinlan-b359a2b/",
+    bio: "Phil has built a career in data systems for biomedical research and is the Director of Health Informatics at the University of Nottingham."
   },
   {
     name: "Andy Rae",
     image: "./images/andy.jpg",
     alt: "Andy Rae",
-    linkedinUrl: "https://www.linkedin.com/in/andyraeio/"
+    linkedinUrl: "https://www.linkedin.com/in/andyraeio/",
+    bio: "Andy builds software for health research, and leads research software teams at the University of Nottingham and Nottingham University Hospitals."
   }
 ];
 
@@ -53,6 +55,7 @@ export const Hero = () => {
                 image={member.image}
                 alt={member.alt}
                 linkedinUrl={member.linkedinUrl}
+                bio={member.bio}
               />
             ))}
           </div>

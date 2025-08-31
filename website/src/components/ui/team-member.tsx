@@ -3,9 +3,10 @@ interface TeamMemberProps {
   image: string;
   alt: string;
   linkedinUrl: string;
+  bio: string;
 }
 
-export const TeamMember = ({ name, image, alt, linkedinUrl }: TeamMemberProps) => (
+export const TeamMember = ({ name, image, alt, linkedinUrl, bio }: TeamMemberProps) => (
   <div className="flex flex-col items-center">
     <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
       <img 
@@ -14,8 +15,11 @@ export const TeamMember = ({ name, image, alt, linkedinUrl }: TeamMemberProps) =
         className="w-16 h-16 rounded-full filter grayscale hover:filter-none transition-all duration-300 border-2 border-slate-400 dark:border-gray-700" 
       />
     </a>
-    <p className="text-slate-300 text-xs mt-2 leading-relaxed mb-8 text-center">
+    <p className="text-slate-300 text-xs mt-2 leading-relaxed text-center">
       {name}
+    </p>
+    <p className="text-slate-300 text-xs leading-relaxed mt-2 text-center">
+      {bio}
     </p>
   </div>
 );
