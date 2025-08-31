@@ -6,7 +6,7 @@ import { WavyBackground } from "@/src/components/ui/wavy-background";
 export default function Page() {
   return (
     <WavyBackground
-    className="max-w-4xl mx-auto relative max-h-screen"
+    className="max-w-4xl mx-auto relative max-h-screen px-6 lg:px-8"
       colors={[
         "#475569", // slate-600 - deeper professional gray
         "#64748b", // slate-500 - medium gray-blue
