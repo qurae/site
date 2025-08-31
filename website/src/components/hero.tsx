@@ -45,7 +45,7 @@ export const Hero = () => {
               font.className
             )}
           >
-            Introducing <span className="font-semibold">Qurae</span>
+            <span className="font-semibold">Qurae</span>
           </p>
           <p
             className={cn(
