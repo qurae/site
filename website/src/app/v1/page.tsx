@@ -5,6 +5,7 @@ import { Banner } from "@/src/components/banner";
 import { About } from "@/src/components/about";
 import { WhoWeAre } from "@/src/components/who-we-are";
 import { OurExpertise } from "@/src/components/our-expertise";
+import { CTA } from "@/src/components/cta";
 import { Footer } from "@/src/components/footer";
 
 export default function Page() {
@@ -17,6 +18,7 @@ export default function Page() {
       <About />
       <WhoWeAre />
       <OurExpertise />
+      <CTA />
       <Footer />
     </>
   );
