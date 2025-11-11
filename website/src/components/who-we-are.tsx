@@ -40,26 +40,19 @@ const teamMembers = [
 
 export const WhoWeAre = () => {
   return (
-    <section className="py-16 px-6 lg:px-8 bg-gray-50 dark:bg-slate-900">
+    <section id="who-we-are" className="py-16 px-6 lg:px-8 bg-gray-50 dark:bg-slate-900">
       <div className="mx-auto max-w-4xl">
         <div className={cn("text-left mb-12", font.className)}>
           <Heading className="text-5xl md:text-7xl mb-8">
             Who We Are
           </Heading>
-          
-          <BodyText>
-            Qurae is led by a team of experienced professionals with deep expertise 
-            in healthcare data, federated technologies, and research software. 
-            Our directors bring together decades of experience from academia, 
-            healthcare systems, and research institutions.
-          </BodyText>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {teamMembers.map((member) => (
             <Dialog key={member.name}>
               <DialogTrigger asChild>
-                <div className="relative group cursor-pointer overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative group cursor-pointer overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-shadow max-w-xs">
                   <div className="relative aspect-[4/5] w-full">
                     <Image
                       src={member.image}

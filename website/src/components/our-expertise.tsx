@@ -9,22 +9,22 @@ const font = Gabarito({
 
 const expertiseAreas = [
   {
-    title: "Federated Technologies",
-    description: "We design and implement federated systems that enable secure, privacy-preserving data analysis across multiple organisations without centralising data."
+    title: "Federation Readiness & Enablement",
+    description: "We help organisations become federation-ready by aligning their data, governance, and infrastructure to participate confidently in secure, compliant research networks.."
   },
   {
-    title: "Data Federation",
-    description: "Our expertise in data federation helps organisations connect disparate data sources while maintaining governance, security, and compliance."
+    title: "Technical Enablement & Oversight",
+    description: "We guide and review client teams to design, implement, and maintain federated tools and pipelines that meet the highest technical and interoperability standards."
   },
   {
-    title: "Healthcare Data Systems",
-    description: "With deep experience in NHS and healthcare environments, we understand the unique requirements for handling sensitive health data."
+    title: "Federation Strategy & Influence",
+    description: "We shape the direction of federated health research by advising leaders, building partnerships, and defining strategies that position organisations at the forefront of global collaboration."
   },
 ];
 
 export const OurExpertise = () => {
   return (
-    <section className="py-16 px-6 lg:px-8 bg-white dark:bg-[#0f172a]">
+    <section id="expertise" className="py-16 px-6 lg:px-8 bg-white dark:bg-[#0f172a]">
       <div className="mx-auto max-w-4xl">
         <div className={cn("text-left mb-12", font.className)}>
           <Heading className="text-5xl md:text-7xl mb-8">
@@ -32,9 +32,7 @@ export const OurExpertise = () => {
           </Heading>
           
           <BodyText className="mb-12">
-            Our team brings together deep expertise across multiple domains, 
-            enabling us to deliver comprehensive solutions that address both 
-            technical and operational challenges.
+            We combine technical insight with strategic experience to help organisations turn federation from an ambition into a working reality.
           </BodyText>
         </div>
 

@@ -9,7 +9,7 @@ const font = Gabarito({
 
 export const About = () => {
   return (
-    <section className="py-16 px-6 lg:px-8 bg-white dark:bg-[#0f172a]">
+    <section id="about" className="py-16 px-6 lg:px-8 bg-white dark:bg-[#0f172a]">
       <div className="mx-auto max-w-4xl">
         <div className={cn("text-left", font.className)}>
           <Heading className="text-5xl md:text-7xl mb-8">
@@ -24,11 +24,8 @@ export const About = () => {
           </BodyText>
 
           <BodyText>
-            We specialise in federated technologies and data federation solutions 
-            that enable organisations to collaborate effectively while maintaining 
-            data privacy and security. Our approach combines deep technical expertise 
-            with a thorough understanding of the unique challenges facing healthcare 
-            and research organisations.
+          We enable organisations to harness federated technologies to drive collaboration, insight, and innovation. 
+          By uniting technical expertise with governance and policy understanding, we help clients turn complex data landscapes into connected ecosystems.
           </BodyText>
 
           <BodyText>
