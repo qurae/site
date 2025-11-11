@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased bg-[#0f172a]`} suppressHydrationWarning>
+      <body className={`antialiased bg-white dark:bg-[#0f172a]`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
