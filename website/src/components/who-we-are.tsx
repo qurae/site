@@ -39,7 +39,7 @@ const teamMembers = [
 ];
 
 export const WhoWeAre = () => {
-  const sectionBg = "bg-white";
+  const sectionBg = "bg-white dark:bg-black";
   
   return (
     <section id="who-we-are" className={`py-16 px-6 lg:px-8 ${sectionBg}`}>

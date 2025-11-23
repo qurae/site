@@ -19,7 +19,7 @@ export const Banner = () => {
         priority
       />
       <div className="absolute inset-0 flex items-center justify-start">
-        <div className="text-left px-8 lg:px-16 max-w-3xl">
+        <div className="text-left px-8 lg:px-24 max-w-4xl">
           <h1 className={cn("text-white text-5xl md:text-7xl font-bold drop-shadow-lg mb-6", font.className)}>
             Advancing Federated Health Research
           </h1>
