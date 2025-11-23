@@ -24,7 +24,7 @@ const expertiseAreas = [
 
 export const OurExpertise = () => {
   return (
-    <section id="expertise" className="py-16 px-6 lg:px-8 bg-white dark:bg-[#0f172a]">
+    <section id="expertise" className="py-16 px-6 lg:px-8 bg-slate-900">
       <div className="mx-auto max-w-4xl">
         <div className={cn("text-left mb-12", font.className)}>
           <Heading className="text-5xl md:text-7xl mb-8">

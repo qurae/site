@@ -39,11 +39,13 @@ const teamMembers = [
 ];
 
 export const WhoWeAre = () => {
+  const sectionBg = "bg-white";
+  
   return (
-    <section id="who-we-are" className="py-16 px-6 lg:px-8 bg-gray-50 dark:bg-slate-900">
+    <section id="who-we-are" className={`py-16 px-6 lg:px-8 ${sectionBg}`}>
       <div className="mx-auto max-w-4xl">
         <div className={cn("text-left mb-12", font.className)}>
-          <Heading className="text-5xl md:text-7xl mb-8">
+          <Heading className="text-5xl md:text-7xl mb-8 text-black">
             Who We Are
           </Heading>
         </div>

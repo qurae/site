@@ -11,6 +11,12 @@ import {
   NavigationMenuTrigger,
 } from "@/src/components/ui/navigation-menu";
 import { cn } from "@/src/lib/utils";
+import { Gabarito } from "next/font/google";
+
+const font = Gabarito({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const Header = () => {
   return (
@@ -30,7 +36,9 @@ export const Header = () => {
                       "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 text-white/90"
                     )}
                   >
-                    About
+                    <span className={cn("text-white font-light drop-shadow-lg", font.className)}>
+                      About
+                    </span>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -41,7 +49,9 @@ export const Header = () => {
                       "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 text-white/90"
                     )}
                   >
-                    Who We Are
+                    <span className={cn("text-white font-light drop-shadow-lg", font.className)}>
+                      Who We Are
+                    </span>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -52,7 +62,9 @@ export const Header = () => {
                       "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 text-white/90"
                     )}
                   >
-                    Our Expertise
+                    <span className={cn("text-white font-light drop-shadow-lg", font.className)}>
+                      Our Expertise
+                    </span>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
