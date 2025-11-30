@@ -30,7 +30,7 @@ export const Hero = () => {
   return (
     <div className="">
       <div className="mx-auto max-w-3xl">
-        <div className={cn("text-left max-w-4xl mx-auto", font.className)}>
+        <div className={cn("text-left max-w-4xl mx-auto text-white", font.className)}>
           <Heading>
             <span className="font-semibold">Qurae</span>
           </Heading>
