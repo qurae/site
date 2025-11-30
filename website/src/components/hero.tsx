@@ -32,22 +32,22 @@ export const Hero = () => {
       <div className="mx-auto max-w-3xl">
         <div className={cn("text-left max-w-4xl mx-auto text-white", font.className)}>
           <Heading>
-            <span className="font-semibold">Qurae</span>
+            <span className="font-semibold text-white">Qurae</span>
           </Heading>
 
-          <BodyText>
+          <BodyText className="text-white">
             Something new is emerging from the University of Nottingham, led by
             the team that has delivered programmes with the NHS, Health Data
             Research UK, DARE UK, and the NIHR Nottingham Biomedical Research
             Centre.
           </BodyText>
 
-          <BodyText>
+          <BodyText className="text-white">
             A rare opportunity to help shape the future direction of this
             emerging company.
           </BodyText>
 
-          <BodyText>
+          <BodyText className="text-white">
             Get in touch today: <EmailLink email="hello@qurae.co.uk" />
           </BodyText>
 
