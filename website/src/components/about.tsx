@@ -11,7 +11,7 @@ export const About = () => {
   
   return (
     <section id="about" className={`py-16 px-6 lg:px-8 bg-slate-950`}>
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-5xl">
         <div className={cn("text-left", font.className)}>
           <Heading className="text-5xl md:text-7xl mb-8 text-white">
             About Qurae

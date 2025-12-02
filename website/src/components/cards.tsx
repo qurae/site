@@ -17,7 +17,7 @@ export function WobbleCardDemo() {
   
   return (
     <section className={`py-16 px-6 lg:px-8 ${sectionBg}`}>
-    <div className="mx-auto max-w-4xl">
+    <div className="mx-auto max-w-5xl">
 
       <div className={cn("text-left mb-12", font.className)}>
         <Heading className="text-5xl md:text-7xl mb-8">
@@ -25,7 +25,7 @@ export function WobbleCardDemo() {
         </Heading>
       </div>
     </div>
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-4xl mx-auto w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-5xl mx-auto w-full">
       <WobbleCard
         containerClassName="col-span-1 lg:col-span-2 h-full bg-blue-800 min-h-[500px] lg:min-h-[300px]"
         className=""

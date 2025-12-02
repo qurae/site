@@ -19,9 +19,9 @@ export const Banner = () => {
         priority
       />
       <div className="absolute inset-0 flex items-center justify-start">
-        <div className="text-left px-8 lg:px-24 max-w-4xl">
-          <h1 className={cn("text-white text-5xl md:text-7xl font-bold drop-shadow-lg mb-6", font.className)}>
-            Advancing Federated Health Research
+        <div className="text-left max-w-5xl mx-auto">
+          <h1 className={cn("text-white text-5xl md:text-6xl font-bold drop-shadow-lg mb-6", font.className)}>
+            Advancing Federated<br /> Health Research
           </h1>
           <p className={cn("text-white text-xl md:text-2xl font-light drop-shadow-lg", font.className)}>
             We help healthcare organisations collaborate through secure and trusted data federation.
