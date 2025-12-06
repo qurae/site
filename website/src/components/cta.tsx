@@ -9,7 +9,7 @@ const font = Gabarito({
 
 export const CTA = () => {
   return (
-    <section className="py-24 px-6 lg:px-8 bg-white dark:bg-black">
+    <section className="py-24 px-6 lg:px-8">
       <div className="mx-auto max-w-5xl">
         <div className={cn("grid grid-cols-1 md:grid-cols-2 gap-12 items-center", font.className)}>
           <div className="text-left">

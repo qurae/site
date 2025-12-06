@@ -16,7 +16,7 @@ export function WobbleCardDemo() {
   const sectionBg = "bg-white dark:bg-slate-950";
   
   return (
-    <section className={`py-16 px-6 lg:px-8 ${sectionBg}`}>
+    <section className={`py-16 px-6 lg:px-8`}>
     <div className="mx-auto max-w-5xl">
 
       <div className={cn("text-left mb-12", font.className)}>

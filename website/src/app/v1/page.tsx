@@ -11,10 +11,8 @@ import { WobbleCardDemo } from "@/src/components/cards";
 export default function Page() {
   return (
     <>
-      <div className="relative">
-        <Header />
-        <Banner />
-      </div>
+      <Header />
+      <Banner />
       <About />
       <WhoWeAre />
       <WobbleCardDemo />
