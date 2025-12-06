@@ -7,6 +7,7 @@ import { WhoWeAre } from "@/src/components/who-we-are";
 import { CTA } from "@/src/components/cta";
 import { Footer } from "@/src/components/footer";
 import { WobbleCardDemo } from "@/src/components/cards";
+import { OurExpertise } from "@/src/components/our-expertise";
 
 export default function Page() {
   return (
@@ -15,7 +16,8 @@ export default function Page() {
       <Banner />
       <About />
       <WhoWeAre />
-      <WobbleCardDemo />
+      {/* <WobbleCardDemo /> */}
+      <OurExpertise />
       <CTA />
       <Footer />
     </>

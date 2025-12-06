@@ -1,0 +1,66 @@
+<svg
+  width="120"
+  height="120"
+  viewBox="0 0 120 120"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="white" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer arc -->
+  <circle
+    cx="60"
+    cy="60"
+    r="48"
+    fill="none"
+    stroke="url(#fade)"
+    stroke-width="2"
+    stroke-dasharray="220 80"
+    stroke-linecap="round"
+  >
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 60 60"
+      to="360 60 60"
+      dur="12s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <!-- Small sweeping line -->
+  <line
+    x1="60"
+    y1="60"
+    x2="60"
+    y2="20"
+    stroke="white"
+    stroke-width="2"
+    stroke-linecap="round"
+  >
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 60 60"
+      to="-360 60 60"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+  </line>
+
+  <!-- End dot -->
+  <circle cx="60" cy="20" r="3" fill="white">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 60 60"
+      to="-360 60 60"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+  </circle>
+</svg>
