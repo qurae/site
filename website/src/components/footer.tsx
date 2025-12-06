@@ -1,5 +1,4 @@
 import { Logo } from "@/src/components/ui/logo";
-import { EmailLink } from "@/src/components/ui/email-link";
 
 export const Footer = () => {
   
@@ -17,6 +16,11 @@ export const Footer = () => {
               hello@qurae.co.uk
             </a>
           </div>
+        </div>
+        <div className="mt-8 pt-8">
+          <p className="text-gray-400 text-sm text-left">
+            Company number: 16636226 (registered in England and Wales)
+          </p>
         </div>
       </div>
     </footer>
