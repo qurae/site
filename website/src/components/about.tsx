@@ -10,7 +10,7 @@ const font = Gabarito({
 export const About = () => {
   
   return (
-    <section id="about" className={`py-16 px-6 lg:px-8 border-b border-white`}>
+    <section id="about" className={`py-32 px-6 lg:px-8 border-b border-white`}>
       <div className="mx-auto max-w-5xl">
         <div className={cn("text-left max-w-3xl", font.className)}>
           <Heading className="text-4xl md:text-4xl mb-8 text-white">

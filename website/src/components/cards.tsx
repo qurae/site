@@ -12,16 +12,14 @@ const font = Gabarito({
 });
 
 export function WobbleCardDemo() {
-
-  const sectionBg = "bg-white dark:bg-slate-950";
-  
+    
   return (
-    <section className={`py-16 px-6 lg:px-8`}>
+    <section className="py-32 px-6 lg:px-8 border-b border-white">
     <div className="mx-auto max-w-5xl">
 
       <div className={cn("text-left mb-12", font.className)}>
-        <Heading className="text-5xl md:text-7xl mb-8">
-          Our Expertise
+        <Heading className="text-5xl md:text-4xl mb-8">
+          What We Do
         </Heading>
       </div>
     </div>
