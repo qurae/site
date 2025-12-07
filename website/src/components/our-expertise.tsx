@@ -11,7 +11,7 @@ const font = Gabarito({
 const expertiseAreas = [
   {
     title: "Increase the value of your data",
-    description: `We help you navigate how to make better use of your data. Through our expertise in data standards, governance, platforms, compliance.`,
+    description: "We help healthcare organisations move from isolated datasets to federation ready assets. Through deep expertise in data standards, governance, platforms, and compliance, we clarify what good looks like and how to get there. The result is data that is trusted, interoperable, and ready to support high impact research.",
     svg: "/animate/circle.svg"
   },
   {
