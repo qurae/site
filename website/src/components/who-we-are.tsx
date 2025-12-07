@@ -4,6 +4,7 @@ import { Gabarito } from "next/font/google";
 import Image from "next/image";
 import { cn } from "@/src/lib/utils";
 import { Heading, BodyText } from "@/src/components/ui/typography";
+import { Button } from "@/src/components/ui/button";
 
 const font = Gabarito({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -72,9 +73,9 @@ export const WhoWeAre = () => {
                   Our directors are international leaders in understanding the complexity between data sovereignty, data
                   standards
                   and the use of data in global analyses. This experience has come from working within the University of
-                  Nottingahm
-                  and Nottingham University Hospitals NHS Trust on prgrammes with Haalth Data Research UK, NIHR
-                  Nottingahm
+                  Nottingham
+                  and Nottingham University Hospitals NHS Trust on programmes with Health Data Research UK, NIHR
+                  Nottingham
                   Biomedical Research Centre and Data and Analytics Research Environments UK.
 
               </BodyText>
@@ -82,18 +83,21 @@ export const WhoWeAre = () => {
             <div className={cn("text-left max-w-5xl", font.className)}>
                   <div className="grid grid-cols-2 gap-8 mb-8">
                       {teamMembers.map((member) => (
+                        <div key={member.name}>
                           <BodyText key={member.name} className="text-white">
                               {member.bio}
 
-                              <a
-                                  href={member.linkedinUrl}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="block text-[#14b8a6] pt-6 hover:underline"
-                              >
-                                  View LinkedIn →
-                              </a>
                           </BodyText>
+                              <Button variant="ghost" className="mt-6" asChild>
+                                <a
+                                    href={member.linkedinUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    View LinkedIn
+                                </a>
+                              </Button>
+                        </div>
                       ))}
                   </div>
               </div>

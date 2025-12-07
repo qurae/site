@@ -18,7 +18,7 @@ export const CTA = () => {
             </Heading>
             
             <BodyText className="text-xl md:text-2xl text-white">
-              Ready to get federation ready? Let's talk.
+              Ready for federation? Let's talk.
             </BodyText>
           </div>
 
