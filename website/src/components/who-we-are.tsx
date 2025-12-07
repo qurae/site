@@ -77,7 +77,7 @@ export const WhoWeAre = () => {
           <div className="space-y-6 mb-8">
             {teamMembers.map((member) => (
               <BodyText key={member.name} className="text-white">
-                <strong>{member.name}</strong> ({member.title}) {member.bio}
+                {member.bio}
 
                 <a
                 key={member.name}
@@ -86,7 +86,7 @@ export const WhoWeAre = () => {
                 rel="noopener noreferrer"
                 className="block text-[#14b8a6] pt-6 hover:text-[#14b8a6] hover:underline"
               >
-                View LinkedIn Profile →
+                View LinkedIn →
               </a>
               </BodyText>
             ))}
