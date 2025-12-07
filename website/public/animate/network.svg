@@ -1,0 +1,124 @@
+<svg
+  width="120"
+  height="120"
+  viewBox="0 0 120 120"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Left partner -->
+  <circle
+    cx="28"
+    cy="60"
+    r="8"
+    fill="none"
+    stroke="white"
+    stroke-width="2"
+    opacity="0.6"
+  >
+    <animate
+      attributeName="cx"
+      from="28"
+      to="52"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+    <animate
+      attributeName="opacity"
+      values="0.2;0.8;0.8;0.2"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <!-- Right partner -->
+  <circle
+    cx="92"
+    cy="60"
+    r="8"
+    fill="none"
+    stroke="white"
+    stroke-width="2"
+    opacity="0.6"
+  >
+    <animate
+      attributeName="cx"
+      from="92"
+      to="68"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+    <animate
+      attributeName="opacity"
+      values="0.2;0.8;0.8;0.2"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <!-- Top partner -->
+  <circle
+    cx="60"
+    cy="26"
+    r="7"
+    fill="none"
+    stroke="white"
+    stroke-width="2"
+    opacity="0.5"
+  >
+    <animate
+      attributeName="cy"
+      from="26"
+      to="48"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+    <animate
+      attributeName="opacity"
+      values="0.1;0.7;0.7;0.1"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <!-- Bottom partner -->
+  <circle
+    cx="60"
+    cy="94"
+    r="7"
+    fill="none"
+    stroke="white"
+    stroke-width="2"
+    opacity="0.5"
+  >
+    <animate
+      attributeName="cy"
+      from="94"
+      to="72"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+    <animate
+      attributeName="opacity"
+      values="0.1;0.7;0.7;0.1"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <!-- Shared partnership moment -->
+  <circle
+    cx="60"
+    cy="60"
+    r="10"
+    fill="none"
+    stroke="white"
+    stroke-width="2"
+    opacity="0"
+  >
+    <animate
+      attributeName="opacity"
+      values="0;0;0.9;0.9;0"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+</svg>

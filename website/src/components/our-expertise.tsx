@@ -23,7 +23,7 @@ const expertiseAreas = [
         "leading software to deliver change to healthcare organisations. Our knowledge of the complete eco-system and international " +
         "partnerships can help you fast track your technology to impact. Whether that is open-source of commercial offerings, we are " +
         "seeking strong partners to deliver change.   ",
-    svg: "/animate/orbit.svg"
+    svg: "/animate/lines.svg"
   },
   {
     title: "Build lasting partnerships",
@@ -31,7 +31,7 @@ const expertiseAreas = [
         " secure and confidential data infrastructure, we are seeking strong and lasting partnerships where we collaboratively seek to " +
         "form partnerships that are based on a common vision that can deliver long term impact. Our track record is strong in working across" +
         "academic, NHS and commercial partners and the ways of working that enable mutual success.",
-    svg: "/animate/arc.svg"
+    svg: "/animate/network.svg"
   },
 ];
 
