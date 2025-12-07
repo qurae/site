@@ -17,7 +17,7 @@ export const CTA = () => {
               Get in Touch
             </Heading>
             
-            <BodyText className="text-xl md:text-2xl text-black">
+            <BodyText className="text-xl md:text-2xl text-white">
               Ready to get federation ready? Let's talk.
             </BodyText>
           </div>
@@ -25,7 +25,7 @@ export const CTA = () => {
           <div className="flex items-center justify-start md:justify-end">
             <a
               href="mailto:hello@qurae.co.uk"
-              className="text-2xl md:text-3xl font-semibold text-black dark:text-white hover:text-blue-600 transition-colors underline underline-offset-8 decoration-2 py-8 px-12"
+              className="text-2xl md:text-3xl font-semibold text-white dark:text-white hover:text-blue-600 transition-colors underline underline-offset-8 decoration-2 py-8 px-12"
             >
               hello@qurae.co.uk
             </a>
