@@ -1,5 +1,6 @@
 import { cn } from "@/src/lib/utils";
 import { Gabarito } from "next/font/google";
+import { Vanta } from "@/src/components/ui/vanta";
 
 const font = Gabarito({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -8,8 +9,9 @@ const font = Gabarito({
 
 export const Banner = () => {
   return (
-    <div className="w-full relative h-screen border-b border-white">
-      <div className="absolute inset-0 flex items-center justify-start">
+    <div className="w-full relative h-screen border-b border-white overflow-hidden">
+      <Vanta />
+      <div className="absolute inset-0 flex items-center justify-start z-10">
         <div className="px-6 lg:px-8 w-full">
           <div className="mx-auto max-w-5xl">
             <div className="text-left">
@@ -19,10 +21,10 @@ export const Banner = () => {
               <p className={cn("text-white text-xl md:text-2xl font-light drop-shadow-lg", font.className)}>
                 Bridging technology and healthcare to unlock global federated research.
               </p>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-    </div>
+      </div>
     </div>
   );
 };
