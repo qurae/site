@@ -53,7 +53,7 @@ export const OurExpertise = () => {
               className="flex items-start gap-16"
             >
               {/* SVG */}
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 hidden md:block">
                 <Image
                   src={area.svg}
                   alt=""
@@ -64,7 +64,7 @@ export const OurExpertise = () => {
               </div>
 
               {/* Vertical Separator */}
-              <div className="w-px h-full min-h-[160px] bg-white opacity-30 flex-shrink-0" />
+              <div className="w-px h-full min-h-[160px] bg-white opacity-30 flex-shrink-0 hidden md:block" />
 
               {/* Content */}
               <div className="flex-1 pt-2">

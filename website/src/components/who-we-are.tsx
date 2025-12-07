@@ -81,14 +81,14 @@ export const WhoWeAre = () => {
               </BodyText>
 
             <div className={cn("text-left max-w-5xl", font.className)}>
-                  <div className="grid grid-cols-2 gap-8 mb-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                       {teamMembers.map((member) => (
                         <div key={member.name}>
                           <BodyText key={member.name} className="text-white">
                               {member.bio}
 
                           </BodyText>
-                              <Button variant="ghost" className="mt-6" asChild>
+                              <Button className="mt-6 bg-[#14b8a6] text-white hover:bg-[#14b8a6]/90" asChild>
                                 <a
                                     href={member.linkedinUrl}
                                     target="_blank"
