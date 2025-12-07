@@ -11,17 +11,26 @@ const font = Gabarito({
 const expertiseAreas = [
   {
     title: "Increase the value of your data",
-    description: "We help healthcare organisations move from isolated datasets to federation ready assets. Through deep expertise in data standards, governance, platforms, and compliance, we clarify what good looks like and how to get there. The result is data that is trusted, interoperable, and ready to support high impact research.",
+    description: "If you have datasets and want to be part of global studies, we can help you move from isolated datasets to federation ready assets. " +
+        "Through deep expertise in data standards, governance, platforms, and compliance, we can help organisastions " +
+        "through a data transformation programme. The result is data that is trusted, interoperable, and ready to " +
+        "be safely by artificial intelligence and support high impact research.",
     svg: "/animate/circle.svg"
   },
   {
     title: "Embed your technology",
-    description: "If you have a technology we can help you navigate enabling research. Open source software, commercial, research software. Adoption, shaping, market ",
+    description: "If you have a technology that enables federation we want to work with you with a focus on the adoption of " +
+        "leading software to deliver change to healthcare organisations. Our knowledge of the complete eco-system and international " +
+        "partnerships can help you fast track your technology to impact. Whether that is open-source of commercial offerings, we are " +
+        "seeking strong partners to deliver change.   ",
     svg: "/animate/orbit.svg"
   },
   {
     title: "Build lasting partnerships.",
-    description: "We can help you connect with organisations that share your vision for research.",
+    description: "We can help you connect with organisations that share your vision for research. With our understanding of the International" +
+        "secure and confidential data infrastructure we are seeking strong and lasting partnerships where we collaboratively seek to " +
+        "form partnerships that are based on a common vision that can deliver long term impact. Our track record is strong in working across" +
+        "academic, NHS and commercial partners and the ways of working that enable mutual success.",
     svg: "/animate/arc.svg"
   },
 ];
