@@ -17,7 +17,7 @@ const teamMembers = [
     image: "/images/phil.png",
     alt: "Phil Quinlan",
     linkedinUrl: "https://www.linkedin.com/in/phil-quinlan-b359a2b/",
-    bio: "Phil is a Professor at the University of Nottingham and an honorary Director of Digital Health Research at Nottingham University Hospitals NHS Trust. He specialises in developing strategic interventions to assist organisations in making the best use of their data. Most recently this is in leading national and international programmes seeking to utilise federated technologies. With a background in software development, complemented with the understanding for how secure environments and the NHS seek to make such technology operational, it has led to many impactful interventions. ",
+    bio: "Phil is a Professor at the University of Nottingham and an honorary Director of Digital Health Research at Nottingham University Hospitals NHS Trust. ",
   },
   {
     name: "Andy Rae",
@@ -25,7 +25,7 @@ const teamMembers = [
     image: "/images/andy.jpg",
     alt: "Andy Rae",
     linkedinUrl: "https://www.linkedin.com/in/andyraeio/",
-    bio: "Andy builds software to support health research - designing, developing, and delivering tools that help people work more effectively with data, systems, and each other. He leads a software team at the Centre for Health Informatics at the University of Nottingham, and is also the Head of Research Software at Nottingham University Hospitals.",
+    bio: "Andy is a Senior Software Engineer at the University of Nottingham and Honorary Head of Research Software at Nottingham University Hospitals NHS Trust.",
   },
 ];
 
@@ -66,34 +66,39 @@ export const WhoWeAre = () => {
       </div>
 
       <section className={`pt-16 px-6 lg:px-8`}>
-      <div className="mx-auto max-w-5xl">
+          <div className="mx-auto max-w-5xl">
 
-      <BodyText className="mb-8 text-white max-w-5xl text-left">
-            Our directors have delivered programmes with the NHS, Health Data Research UK, DARE UK, 
-            and the NIHR Nottingham Biomedical Research Centre.
-      </BodyText>
+              <BodyText className="mb-8 text-white max-w-5xl text-left">
+                  Our directors are international leaders in understanding the complexity between data sovereignty, data
+                  standards
+                  and the use of data in global analyses. This experience has come from working within the University of
+                  Nottingahm
+                  and Nottingham University Hospitals NHS Trust on prgrammes with Haalth Data Research UK, NIHR
+                  Nottingahm
+                  Biomedical Research Centre and Data and Analytics Research Environments UK.
 
-        <div className={cn("text-left max-w-3xl", font.className)}>
-          <div className="space-y-6 mb-8">
-            {teamMembers.map((member) => (
-              <BodyText key={member.name} className="text-white">
-                {member.bio}
-
-                <a
-                key={member.name}
-                href={member.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-[#14b8a6] pt-6 hover:text-[#14b8a6] hover:underline"
-              >
-                View LinkedIn →
-              </a>
               </BodyText>
-            ))}
+
+<div className={cn("text-left max-w-5xl", font.className)}>
+                  <div className="grid grid-cols-2 gap-8 mb-8">
+                      {teamMembers.map((member) => (
+                          <BodyText key={member.name} className="text-white">
+                              {member.bio}
+
+                              <a
+                                  href={member.linkedinUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="block text-[#14b8a6] pt-6 hover:underline"
+                              >
+                                  View LinkedIn →
+                              </a>
+                          </BodyText>
+                      ))}
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
     </section>
   );
