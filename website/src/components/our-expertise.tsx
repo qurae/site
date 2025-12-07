@@ -12,7 +12,7 @@ const expertiseAreas = [
   {
     title: "Increase the value of your data",
     description: "If you have datasets and want to be part of global studies, we can help you move from isolated datasets to federation ready assets. " +
-        "Through deep expertise in data standards, governance, platforms, and compliance, we can help organisastions " +
+        "Through deep expertise in data standards, governance, platforms, and compliance, we can help organisations " +
         "through a data transformation programme. The result is data that is trusted, interoperable, and ready to " +
         "be safely used by artificial intelligence and support high impact research.",
     svg: "/animate/circle.svg"
@@ -29,7 +29,7 @@ const expertiseAreas = [
     title: "Build lasting partnerships",
     description: "We can help you connect with organisations that share your vision for research. With our understanding of the International" +
         " secure and confidential data infrastructure, we are seeking strong and lasting partnerships where we collaboratively seek to " +
-        "form partnerships that are based on a common vision that can deliver long term impact. Our track record is strong in working across" +
+        "form partnerships that are based on a common vision that can deliver long term impact. Our track record is strong in working across " +
         "academic, NHS and commercial partners and the ways of working that enable mutual success.",
     svg: "/animate/network.svg"
   },
