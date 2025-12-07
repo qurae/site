@@ -59,10 +59,10 @@ export const OurExpertise = () => {
 
               {/* Content */}
               <div className="flex-1 pt-2">
-                <h3 className="text-white text-3xl md:text-4xl font-light mb-4 leading-tight">
+                <h3 className={cn("text-white text-3xl md:text-3xl font-light mb-4 leading-tight", font.className)}>
                   {area.title}
                 </h3>
-                <p className="text-white text-base md:text-lg leading-relaxed opacity-90">
+                <p className={cn("text-white text-base md:text-lg leading-relaxed opacity-90", font.className)}>
                   {area.description}
                 </p>
               </div>
