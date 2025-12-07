@@ -32,46 +32,33 @@ export const Header = () => {
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/v1#about" legacyBehavior passHref>
+                <Link href="#expertise" legacyBehavior passHref>
                   <NavigationMenuLink
                     className={cn(
                       "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 text-white/90"
                     )}
                   >
                     <span className={cn("text-white font-light drop-shadow-lg", font.className)}>
-                      About
+                      What We Enable
                     </span>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/v1#who-we-are" legacyBehavior passHref>
+                <Link href="#who-we-are" legacyBehavior passHref>
                   <NavigationMenuLink
                     className={cn(
                       "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 text-white/90"
                     )}
                   >
                     <span className={cn("text-white font-light drop-shadow-lg", font.className)}>
-                      Who We Are
+                      Our Directors
                     </span>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/v1#expertise" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={cn(
-                      "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 text-white/90"
-                    )}
-                  >
-                    <span className={cn("text-white font-light drop-shadow-lg", font.className)}>
-                      What We Do
-                    </span>
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/v1#contact" legacyBehavior passHref>
+                <Link href="#contact" legacyBehavior passHref>
                   <NavigationMenuLink
                     className={cn(
                       "group inline-flex h-9 w-max items-center justify-center rounded-md bg-[#14b8a6] px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 text-white/90"
