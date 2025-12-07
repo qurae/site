@@ -65,7 +65,7 @@ export const Header = () => {
                     )}
                   >
                     <span className={cn("text-white font-light drop-shadow-lg", font.className)}>
-                      Contact
+                      Contact Us
                     </span>
                   </NavigationMenuLink>
                 </Link>
