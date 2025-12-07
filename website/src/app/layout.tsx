@@ -4,14 +4,14 @@ import { ThemeProvider } from "@/src/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Qurae",
-  description: "Something new is emerging from the University of Nottingham, led by the team that has delivered programmes with the NHS, Health Data Research UK, DARE UK, and the NIHR Nottingham Biomedical Research Centre.",
+  description: "Bridging technology and healthcare to unlock global federated research.",
   icons: {
     icon: "./icons/favicon.ico",
     apple: "./icons/apple-icon.png",
   },
   openGraph: {
     title: "Qurae",
-    description: "Something new is emerging from the University of Nottingham, led by the team that has delivered programmes with the NHS, Health Data Research UK, DARE UK, and the NIHR Nottingham Biomedical Research Centre.",
+    description: "Bridging technology and healthcare to unlock global federated research.",
     images: "https://qurae.co.uk/images/og-image.png",
   },
   manifest: "/manifest.json",

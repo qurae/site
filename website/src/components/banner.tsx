@@ -1,6 +1,5 @@
 import { cn } from "@/src/lib/utils";
 import { Gabarito } from "next/font/google";
-import Image from "next/image";
 
 const font = Gabarito({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -17,9 +16,6 @@ export const Banner = () => {
               <h1 className={cn("text-white text-5xl md:text-6xl font-bold drop-shadow-lg mb-6", font.className)}>
                 Advancing Federated<br /> Health Research
               </h1>
-              {/* <p className={cn("text-white text-xl md:text-2xl font-light drop-shadow-lg", font.className)}>
-                Breaking down the barriers of global research by bridging the gap between technology and healthcare providers.
-              </p> */}
               <p className={cn("text-white text-xl md:text-2xl font-light drop-shadow-lg", font.className)}>
                 Bridging technology and healthcare to unlock global federated research.
               </p>
