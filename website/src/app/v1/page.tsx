@@ -14,10 +14,10 @@ export default function Page() {
     <>
       <Header />
       <Banner />
-      <About />
+      <OurExpertise />
+      {/* <About /> */}
       <WhoWeAre />
       {/* <WobbleCardDemo /> */}
-      <OurExpertise />
       <CTA />
       <Footer />
     </>

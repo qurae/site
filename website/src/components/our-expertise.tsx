@@ -10,18 +10,18 @@ const font = Gabarito({
 
 const expertiseAreas = [
   {
-    title: "Federation Readiness & Enablement",
-    description: "We help organisations become federation-ready by aligning their data, governance, and infrastructure to participate confidently in secure, compliant research networks..",
+    title: "Increase the value of your data",
+    description: `We help you navigate how to make better use of your data. Through our expertise in data standards, governance, platforms, compliance.`,
     svg: "/animate/circle.svg"
   },
   {
-    title: "Technical Enablement & Oversight",
-    description: "We guide and review client teams to design, implement, and maintain federated tools and pipelines that meet the highest technical and interoperability standards.",
+    title: "Embed your technology",
+    description: "If you have a technology we can help you navigate enabling research. Open source software, commercial, research software. Adoption, shaping, market ",
     svg: "/animate/orbit.svg"
   },
   {
-    title: "Federation Strategy & Influence",
-    description: "We shape the direction of federated health research by advising leaders, building partnerships, and defining strategies that position organisations at the forefront of global collaboration.",
+    title: "Build lasting partnerships.",
+    description: "We can help you connect with organisations that share your vision for research.",
     svg: "/animate/arc.svg"
   },
 ];
@@ -32,7 +32,7 @@ export const OurExpertise = () => {
       <div className="mx-auto max-w-5xl">
         <div className={cn("text-left mb-12", font.className)}>
           <Heading className="text-5xl md:text-4xl mb-8">
-            What We Do
+            What We Enable
           </Heading>
         
         </div>
