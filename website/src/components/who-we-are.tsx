@@ -79,7 +79,7 @@ export const WhoWeAre = () => {
 
               </BodyText>
 
-<div className={cn("text-left max-w-5xl", font.className)}>
+            <div className={cn("text-left max-w-5xl", font.className)}>
                   <div className="grid grid-cols-2 gap-8 mb-8">
                       {teamMembers.map((member) => (
                           <BodyText key={member.name} className="text-white">
@@ -97,6 +97,17 @@ export const WhoWeAre = () => {
                       ))}
                   </div>
               </div>
+
+               <BodyText className="mb-8 text-white max-w-5xl text-left">
+
+                   Their successful partnership has delivered many impacts to the projects they run, including the
+                   use of open-source software called Bunny in the NHS England Secure Data Environment Programme. Assisting
+                   the adoption of standards by working collaboratively with industry and academic developers of technology
+                   platforms to deliver a step change in capability in NUH. They combine exceptional technical knowledge
+                   with first hand experience of deploying tools to transform research capability within secure environments.
+
+              </BodyText>
+
           </div>
       </section>
 
