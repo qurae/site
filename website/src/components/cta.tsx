@@ -13,7 +13,7 @@ export const CTA = () => {
       <div className="mx-auto max-w-5xl">
         <div className={cn("grid grid-cols-1 md:grid-cols-2 gap-12 items-center", font.className)}>
           <div className="text-left">
-            <Heading className="text-5xl md:text-7xl mb-6 text-black">
+            <Heading className="text-5xl md:text-7xl mb-6 text-white">
               Get in Touch
             </Heading>
             
