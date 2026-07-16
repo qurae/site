@@ -1,21 +1,21 @@
 "use client";
 
-import { Header } from "@/src/components/header";
-import { Banner } from "@/src/components/banner";
-import { WhoWeAre } from "@/src/components/who-we-are";
-import { CTA } from "@/src/components/cta";
-import { Footer } from "@/src/components/footer";
+import { OriginalHeader } from "@/src/components/original/header";
+import { OriginalBanner } from "@/src/components/original/banner";
 import { OurExpertise } from "@/src/components/our-expertise";
+import { OriginalWhoWeAre } from "@/src/components/original/who-we-are";
+import { OriginalCTA } from "@/src/components/original/cta";
+import { OriginalFooter } from "@/src/components/original/footer";
 
 export default function Page() {
   return (
     <>
-      <Header />
-      <Banner />
+      <OriginalHeader />
+      <OriginalBanner />
       <OurExpertise />
-      <WhoWeAre />
-      <CTA />
-      <Footer />
+      <OriginalWhoWeAre />
+      <OriginalCTA />
+      <OriginalFooter />
     </>
   );
 }

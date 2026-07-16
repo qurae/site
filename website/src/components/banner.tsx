@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { cn } from "@/src/lib/utils";
 import { Gabarito } from "next/font/google";
 import { Vanta } from "@/src/components/ui/vanta";
+import { Button } from "@/src/components/ui/button";
 
 const font = Gabarito({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -16,11 +18,14 @@ export const Banner = () => {
           <div className="mx-auto max-w-5xl">
             <div className="text-left">
               <h1 className={cn("text-white text-5xl md:text-6xl font-bold drop-shadow-lg mb-6", font.className)}>
-                Advancing Federated<br /> Health Research
+                Driving Impact<br /> From Your Data
               </h1>
-              <p className={cn("text-white text-xl md:text-2xl font-light drop-shadow-lg", font.className)}>
-                Bridging technology and healthcare to unlock global federated research.
+              <p className={cn("text-white text-xl md:text-2xl font-light drop-shadow-lg mb-8", font.className)}>
+                Connecting national strategy to local delivery.
               </p>
+              <Button asChild size="lg" className={cn("bg-[#14b8a6] text-white hover:bg-[#14b8a6]/90", font.className)}>
+                <Link href="/contact">Get in Touch</Link>
+              </Button>
             </div>
           </div>
         </div>
