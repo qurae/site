@@ -57,7 +57,7 @@ export const WhoWeAre = () => {
                 <h3 className="text-white text-2xl font-semibold mb-1">{member.name}</h3>
                 <p className="text-[#14b8a6] font-medium mb-4">{member.title}</p>
                 <p className="text-white/80 leading-relaxed mb-6">{member.bio}</p>
-                <Button className="bg-[#14b8a6] text-white hover:bg-[#14b8a6]/90" asChild>
+                <Button className="bg-[#14b8a6] text-[#0f172a] hover:bg-[#14b8a6]/90" asChild>
                   <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer">
                     View LinkedIn
                   </a>
@@ -67,7 +67,7 @@ export const WhoWeAre = () => {
           ))}
         </div>
 
-        <BodyText className={cn("mt-16 text-white/80 max-w-3xl text-left", font.className)}>
+        <BodyText className={cn("mt-16 text-white/80 text-left", font.className)}>
           Together, they&apos;re recognised leaders in the complexity of data sovereignty, data
           standards, and how to put data to work safely at scale &mdash; built from years inside the
           University of Nottingham and Nottingham University Hospitals NHS Trust, on programmes with
@@ -75,7 +75,7 @@ export const WhoWeAre = () => {
           Research Environments UK.
         </BodyText>
 
-        <BodyText className={cn("mt-6 text-white/80 max-w-3xl text-left", font.className)}>
+        <BodyText className={cn("mt-6 text-white/80 text-left", font.className)}>
           This isn&apos;t theoretical. Bunny, their open-source software, is already running inside
           the NHS England Secure Data Environment Programme &mdash; helping standardise and adopt new
           platforms in collaboration with industry and academic developers, and delivering a step

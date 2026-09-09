@@ -7,10 +7,17 @@ const font = Gabarito({
   subsets: ["latin"],
 });
 
+interface FeatureGridItem {
+  title: string;
+  description: string;
+  href?: string;
+  linkLabel?: string;
+}
+
 interface FeatureGridProps {
   eyebrow?: string;
   heading: string;
-  items: { title: string; description: string }[];
+  items: FeatureGridItem[];
   className?: string;
 }
 
@@ -37,6 +44,16 @@ export const FeatureGrid = ({ eyebrow, heading, items, className }: FeatureGridP
             >
               <h3 className="text-white text-xl font-medium mb-3">{item.title}</h3>
               <p className="text-white/80 leading-relaxed">{item.description}</p>
+              {item.href && (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 text-[#14b8a6] font-semibold hover:underline underline-offset-4"
+                >
+                  {item.linkLabel ?? item.href.replace(/^https?:\/\//, "")} &rarr;
+                </a>
+              )}
             </div>
           ))}
         </div>

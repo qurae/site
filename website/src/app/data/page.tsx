@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
+import { Gabarito } from "next/font/google";
 import { Header } from "@/src/components/header";
 import { Footer } from "@/src/components/footer";
 import { ProductPageHero } from "@/src/components/product-page-hero";
 import { FeatureGrid } from "@/src/components/feature-grid";
 import { ProcessSteps } from "@/src/components/process-steps";
-import { Logos } from "@/src/components/logos";
 import { CtaBand } from "@/src/components/cta-band";
+import { cn } from "@/src/lib/utils";
+import { Heading, BodyText } from "@/src/components/ui/typography";
+
+const font = Gabarito({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Data Partnership — Qurae",
@@ -20,19 +27,19 @@ export const metadata: Metadata = {
 const capabilities = [
   {
     title: "Data Standards & Interoperability",
-    description: "OMOP mapping, FAIR alignment and the standards work that makes your data usable beyond your own walls.",
+    description: "OMOP mapping, FAIR alignment and the standards work that lets your data connect safely across international, federated research networks.",
   },
   {
     title: "Governance & Compliance",
-    description: "Frameworks that speed up safe use of your data, instead of slowing it down.",
+    description: "Connecting does not mean losing control, and there are approaches that ensure we help you retain that control whilst still benefitting from being connected into international research data networks",
   },
   {
     title: "AI & Analysis-Ready Platforms",
-    description: "Infrastructure built so your data can be trusted and used with confidence by AI and analytics teams.",
+    description: "There are many options you could select, not all give you the control you may desire, we can help you pick the right platforms that match your desired levels of control",
   },
   {
-    title: "A Route to the Network",
-    description: "Access to one of the UK's leading health data networks, built over 15+ years across academia, the NHS and industry.",
+    title: "The Research Domain, Built In",
+    description: "Direct access to the University of Nottingham's research and research software teams, and to one of the UK's leading health data networks — built for real-world evidence studies and international programmes of research.",
   },
 ];
 
@@ -47,7 +54,7 @@ const steps = [
   },
   {
     title: "Deliver",
-    description: "You end up with trusted, interoperable data, and a direct line into national programmes.",
+    description: "You end up with trusted, interoperable data, connected to national and international programmes — without losing control of it.",
   },
 ];
 
@@ -58,14 +65,43 @@ export default function DataPage() {
       <main className="pt-24">
         <ProductPageHero
           eyebrow="Data Partnership"
-          title="Turn your data into a trusted asset"
-          description="You&apos;re sitting on data you can&apos;t yet put to work. The standards, governance and platform expertise needed to make it trusted, interoperable and AI-ready is hard to hire and harder to retain. We bring that capability directly into your team &mdash; at pace, without adding headcount &mdash; and open a route into one of the UK&apos;s leading health data networks."
-          svg="/animate/circle.svg"
+          title="Turn your data into a trusted research asset"
+          description="The NHS Ten Year Plan names data as one of the enabling technologies behind its reform, and the national AI strategy is asking for greater provenance in the data organisations use. Meeting that means navigating international standards and federated networks, daunting for any single organisation, and a team that&apos;s hard to recruit and harder to retain. Organisations that aren&apos;t connected to national and international research programmes don&apos;t just miss the network, they miss the funding that comes with being part of it. We help you get connected and included while you stay in control, bringing that capability directly into your team, at pace and without adding headcount, and opening a route into one of the UK&apos;s leading health data networks &mdash; and the funding that comes with it."
         />
+
+        <section className="py-32 px-6 lg:px-8 border-b border-white">
+          <div className="mx-auto max-w-5xl">
+            <div className={cn("text-left", font.className)}>
+              <p className="text-[#14b8a6] uppercase tracking-widest text-sm font-semibold mb-4">
+                Why It Matters
+              </p>
+              <Heading className="text-4xl md:text-5xl mb-8 text-white">
+                Governance as an enabler for research
+              </Heading>
+              <BodyText className="text-lg md:text-xl text-white">
+                Our founders have done this before, across national programmes with the NHS, Health Data
+                Research UK and the NHS England Secure Data Environment Programme and we
+                bring that knowledge and experience directly into your organisation.
+              </BodyText>
+              <BodyText className="text-lg md:text-xl text-white">
+                Where it helps, we bring in the University of Nottingham&apos;s own research and
+                research software teams too, so what you build works for the research domain, not
+                just the technical platform: real-world evidence studies, international
+                programmes of research, and the standards they run on.
+              </BodyText>
+              <BodyText className="text-lg md:text-xl text-white mb-0">
+                If you&apos;re an NHS organisation, this is also about your patients. Data that
+                isn&apos;t standards-ready and connected is research your patients can&apos;t be
+                included in. We partner with you through every step of getting there &mdash;
+                without you losing control of your data.
+              </BodyText>
+            </div>
+          </div>
+        </section>
 
         <FeatureGrid
           eyebrow="What We Bring"
-          heading="Capability you can't easily hire"
+          heading="Capability you can't easily recruit"
           items={capabilities}
         />
 
@@ -75,11 +111,9 @@ export default function DataPage() {
           steps={steps}
         />
 
-        <Logos />
-
         <CtaBand
           heading="Ready to see what your data could become?"
-          subtext="Let's talk about where you are today, and what a trusted, AI-ready asset would look like."
+          subtext="Let's talk about where you are today, and how we partner with you to get connected — without you losing control of your data."
         />
       </main>
       <Footer />

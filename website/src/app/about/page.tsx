@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Gabarito } from "next/font/google";
 import { Header } from "@/src/components/header";
 import { WhoWeAre } from "@/src/components/who-we-are";
-import { Logos } from "@/src/components/logos";
 import { CtaBand } from "@/src/components/cta-band";
 import { Footer } from "@/src/components/footer";
 import { cn } from "@/src/lib/utils";
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
 const stats = [
   { value: "15+", label: "Years inside the NHS and academia" },
   { value: "2", label: "Directors. No layers, no handoffs." },
-  { value: "1", label: "National network, 15 years in the making" },
+  { value: "1", label: "International professional research network, 15 years in the making" },
 ];
 
 export default function AboutPage() {
@@ -43,14 +42,14 @@ export default function AboutPage() {
               <Heading className="text-4xl md:text-6xl mb-6 text-white">
                 The team you can&apos;t hire yourself
               </Heading>
-              <BodyText className="text-lg md:text-xl text-white/80 max-w-2xl mb-0">
+              <BodyText className="text-lg md:text-xl text-white/80 mb-0">
                 Qurae is Phil Quinlan and Andy Rae &mdash; two directors with 15+ years inside the NHS
                 and academia, and the network to prove it. You don&apos;t need to hire us. You can
                 just engage us.
               </BodyText>
             </div>
 
-            <div className={cn("grid grid-cols-3 gap-6 mt-16 max-w-2xl", font.className)}>
+            <div className={cn("grid grid-cols-3 gap-6 mt-16", font.className)}>
               {stats.map((stat) => (
                 <div key={stat.label}>
                   <p className="text-white text-4xl md:text-5xl font-light mb-2">{stat.value}</p>
@@ -72,7 +71,7 @@ export default function AboutPage() {
               <Heading className="text-4xl md:text-5xl mb-8 text-white">
                 A network you can&apos;t buy
               </Heading>
-              <BodyText className="text-lg md:text-xl text-white max-w-2xl">
+              <BodyText className="text-lg md:text-xl text-white">
                 When you work with Qurae, you don&apos;t just get two directors &mdash; you get a
                 pathway into one of the UK&apos;s leading health data networks, built over 15+ years
                 across academia, the NHS and industry. We&apos;re seeking strong, lasting partnerships
@@ -82,8 +81,6 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-
-        <Logos />
 
         <CtaBand
           heading="Ready to work with the team, not around it?"

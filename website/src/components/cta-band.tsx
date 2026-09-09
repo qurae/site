@@ -28,7 +28,7 @@ export const CtaBand = ({ heading, subtext }: CtaBandProps) => {
             </BodyText>
           </div>
           <div className="flex justify-start md:justify-end">
-            <Button asChild size="lg" className="bg-[#14b8a6] text-white hover:bg-[#14b8a6]/90">
+            <Button asChild size="lg" className="bg-[#14b8a6] text-[#0f172a] hover:bg-[#14b8a6]/90">
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>
