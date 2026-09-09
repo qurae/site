@@ -21,6 +21,7 @@ const font = Gabarito({
 const navLinks = [
   { label: "Data", href: "/data" },
   { label: "Software", href: "/software" },
+  { label: "Case Studies", href: "/case-studies" },
   { label: "About", href: "/about" },
 ];
 
