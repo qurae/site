@@ -43,9 +43,9 @@ export default function AboutPage() {
                 The team you can&apos;t hire yourself
               </Heading>
               <BodyText className="text-lg md:text-xl text-white/80 mb-0">
-                Qurae is Phil Quinlan and Andy Rae &mdash; two directors with 15+ years inside the NHS
-                and academia, and the network to prove it. You don&apos;t need to hire us. You can
-                just engage us.
+                Qurae is a University of Nottingham spinout, founded by Phil Quinlan and Andy Rae
+                &mdash; two directors with 15+ years inside the NHS and academia, and the network
+                to prove it. You don&apos;t need to hire us. You can just engage us.
               </BodyText>
             </div>
 

@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 const builtByOurFounders = [
   {
     title: "Carrot",
-    description: "Built by our founders in their University of Nottingham roles, Carrot helps structure and map clinical data for research use.",
+    description: "Built at the University of Nottingham, Carrot helps structure and map clinical data for research use.",
     href: "https://carrot.ac.uk",
     linkLabel: "carrot.ac.uk",
   },
   {
     title: "Bunny",
-    description: "Built by our founders in their University roles, Bunny is open-source software already running inside the NHS England Secure Data Environment Programme.",
+    description: "Built at the University of Nottingham, Bunny is open-source software already running inside the NHS England Secure Data Environment Programme.",
     href: "https://bunny.health",
     linkLabel: "bunny.health",
   },
@@ -53,7 +53,7 @@ export default function SoftwarePage() {
       <main className="pt-24">
         <ProductPageHero
           eyebrow="Software Partnership"
-          title="Led by the people who build it"
+          title="Led by the people who ship it"
           description="Phil and Andy, Qurae&apos;s founders, are software developers in their day jobs at the University of Nottingham &mdash; the team behind tools like Carrot and Bunny, already running inside NHS and academic environments to enable the safe, secure use of sensitive data in research. Qurae is how you work with that expertise: we&apos;re looking for partnerships that excite and accelerate research, and we want to work with the best software providers to drive impact together."
         />
 
