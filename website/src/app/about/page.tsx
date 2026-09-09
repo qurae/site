@@ -40,12 +40,13 @@ export default function AboutPage() {
                 About Qurae
               </p>
               <Heading className="text-4xl md:text-6xl mb-6 text-white">
-                The team you can&apos;t hire yourself
+                Engage our team, don't recruit your own
               </Heading>
               <BodyText className="text-lg md:text-xl text-white/80 mb-0">
                 Qurae is a University of Nottingham spinout, founded by Phil Quinlan and Andy Rae
-                &mdash; two directors with 15+ years inside the NHS and academia, and the network
-                to prove it. You don&apos;t need to hire us. You can just engage us.
+                &mdash; two directors with 15+ years inside the NHS and academia, and the strong 
+                international research network. We want to help connect the data in your organisation to 
+                enable opportunity with control.
               </BodyText>
             </div>
 
