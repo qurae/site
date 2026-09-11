@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 const builtByOurFounders = [
   {
     title: "Carrot",
-    description: "Built at the University of Nottingham, Carrot helps structure and map clinical data for research use.",
+    description: "Helps structure and map clinical data for research use to the international data standard. Lower the barrier to being part of global networks",
     href: "https://carrot.ac.uk",
     linkLabel: "carrot.ac.uk",
   },
   {
     title: "Bunny",
-    description: "Built at the University of Nottingham, Bunny is open-source software already running inside the NHS England Secure Data Environment Programme.",
+    description: "Open-source software that enables your data to be discovered securely and already running inside the NHS England Secure Data Environment Programme.",
     href: "https://bunny.health",
     linkLabel: "bunny.health",
   },
@@ -60,7 +60,26 @@ export default function SoftwarePage() {
         <FeatureGrid
           eyebrow="Built By Our Founders"
           heading="Software already running in production"
+          intro={
+            <>
+              The University of Nottingham&apos;s{" "}
+              <a
+                href="https://www.nottingham.ac.uk/health-informatics/index.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#14b8a6] hover:underline underline-offset-4"
+              >
+                Centre for Health Informatics
+              </a>{" "}
+              has spent years building software for health data research, not just studying it.
+              Carrot and Bunny, below, are two examples of what that team has shipped. Qurae spun
+              out of that same team, and we&apos;ve kept the connections that come with it. Where
+              it helps, we can bring the Centre&apos;s own people in to work alongside you
+              directly.
+            </>
+          }
           items={builtByOurFounders}
+          footerLink={{ href: "/case-studies", label: "See it in action in our case studies" }}
         />
 
         <ProcessSteps

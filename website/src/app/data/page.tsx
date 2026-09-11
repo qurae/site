@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Gabarito } from "next/font/google";
 import { Header } from "@/src/components/header";
 import { Footer } from "@/src/components/footer";
@@ -89,12 +90,18 @@ export default function DataPage() {
                 just the technical platform: real-world evidence studies, international
                 programmes of research, and the standards they run on.
               </BodyText>
-              <BodyText className="text-lg md:text-xl text-white mb-0">
+              <BodyText className="text-lg md:text-xl text-white">
                 If you&apos;re an NHS organisation, this is also about your patients. Data that
                 isn&apos;t standards-ready and connected is research your patients can&apos;t be
                 included in. We partner with you through every step of getting there, and the
                 data stays yours throughout.
               </BodyText>
+              <Link
+                href="/case-studies"
+                className="inline-flex items-center gap-2 text-[#14b8a6] font-semibold hover:underline underline-offset-4"
+              >
+                See it in action in our case studies &rarr;
+              </Link>
             </div>
           </div>
         </section>

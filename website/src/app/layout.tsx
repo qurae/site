@@ -3,14 +3,14 @@ import "@/src/app/globals.css";
 
 export const metadata: Metadata = {
   title: "Qurae",
-  description: "Connecting national strategy to local delivery. We turn healthcare data into trusted, AI-ready assets without adding headcount.",
+  description: "Connected. Included. In control. We turn healthcare data into trusted, AI-ready assets without adding headcount.",
   icons: {
     icon: "./icons/favicon.ico",
     apple: "./icons/apple-icon.png",
   },
   openGraph: {
     title: "Qurae",
-    description: "Connecting national strategy to local delivery. We turn healthcare data into trusted, AI-ready assets without adding headcount.",
+    description: "Connected. Included. In control. We turn healthcare data into trusted, AI-ready assets without adding headcount.",
     images: "https://qurae.co.uk/images/og-image.png",
   },
   manifest: "/manifest.json",

@@ -16,10 +16,10 @@ const font = Gabarito({
 
 export const metadata: Metadata = {
   title: "Qurae — Driving Impact From Your Data",
-  description: "Connecting national strategy to local delivery. We turn healthcare data into trusted, AI-ready assets without adding headcount.",
+  description: "Connected. Included. In control. We turn healthcare data into trusted, AI-ready assets without adding headcount.",
   openGraph: {
     title: "Qurae — Driving Impact From Your Data",
-    description: "Connecting national strategy to local delivery. We turn healthcare data into trusted, AI-ready assets without adding headcount.",
+    description: "Connected. Included. In control. We turn healthcare data into trusted, AI-ready assets without adding headcount.",
     images: "https://qurae.co.uk/images/og-image.png",
   },
 };
@@ -32,7 +32,7 @@ const services = [
   },
   {
     title: "Software",
-    description: "Get your technology adopted inside real NHS and academic environments, fast.",
+    description: "Partner with us to connect your software into national and international research programmes.",
     href: "/software",
   },
 ];

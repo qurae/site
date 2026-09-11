@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+import Link from "next/link";
 import { Gabarito } from "next/font/google";
 import { cn } from "@/src/lib/utils";
 import { Heading } from "@/src/components/ui/typography";
@@ -17,11 +19,13 @@ interface FeatureGridItem {
 interface FeatureGridProps {
   eyebrow?: string;
   heading: string;
+  intro?: ReactNode;
   items: FeatureGridItem[];
   className?: string;
+  footerLink?: { href: string; label: string };
 }
 
-export const FeatureGrid = ({ eyebrow, heading, items, className }: FeatureGridProps) => {
+export const FeatureGrid = ({ eyebrow, heading, intro, items, className, footerLink }: FeatureGridProps) => {
   return (
     <section className={cn("py-32 px-6 lg:px-8 border-b border-white", className)}>
       <div className="mx-auto max-w-5xl">
@@ -34,6 +38,11 @@ export const FeatureGrid = ({ eyebrow, heading, items, className }: FeatureGridP
           <Heading className="text-4xl md:text-5xl mb-0 text-white">
             {heading}
           </Heading>
+          {intro && (
+            <p className="text-white/80 text-lg mt-6">
+              {intro}
+            </p>
+          )}
         </div>
 
         <div className={cn("grid grid-cols-1 sm:grid-cols-2 gap-6", font.className)}>
@@ -57,6 +66,15 @@ export const FeatureGrid = ({ eyebrow, heading, items, className }: FeatureGridP
             </div>
           ))}
         </div>
+
+        {footerLink && (
+          <Link
+            href={footerLink.href}
+            className={cn("inline-flex items-center gap-2 mt-10 text-[#14b8a6] font-semibold hover:underline underline-offset-4", font.className)}
+          >
+            {footerLink.label} &rarr;
+          </Link>
+        )}
       </div>
     </section>
   );
