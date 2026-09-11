@@ -19,10 +19,11 @@ const font = Gabarito({
 });
 
 const navLinks = [
+  { label: "About", href: "/about" },
+  { label: "Vision", href: "/vision" },
   { label: "Data", href: "/data" },
   { label: "Software", href: "/software" },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "About", href: "/about" },
 ];
 
 export const Header = () => {

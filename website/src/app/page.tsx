@@ -15,7 +15,7 @@ const font = Gabarito({
 });
 
 export const metadata: Metadata = {
-  title: "Qurae — Driving Impact From Your Data",
+  title: "Qurae — Driving Impact From Data",
   description: "Connected. Included. In control. We turn healthcare data into trusted, AI-ready assets without adding headcount.",
   openGraph: {
     title: "Qurae — Driving Impact From Your Data",
@@ -95,6 +95,7 @@ export default function Page() {
         eyebrow="Why Qurae"
         heading="Partners, not consultants"
         items={differentiators}
+        footerLink={{ href: "/vision", label: "This is part of a bigger shift we believe in" }}
       />
 
       <CtaBand

@@ -9,10 +9,11 @@ const font = Gabarito({
 });
 
 const companyLinks = [
+  { label: "About", href: "/about" },
+  { label: "Vision", href: "/vision" },
   { label: "Data", href: "/data" },
   { label: "Software", href: "/software" },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
