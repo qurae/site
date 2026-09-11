@@ -82,6 +82,13 @@ export const WhoWeAre = () => {
           change in capability at Nottingham University Hospitals. It&apos;s deployed, in production,
           inside one of the most secure environments in the NHS.
         </BodyText>
+
+        <BodyText className={cn("mt-6 text-white/80 text-left", font.className)}>
+          That know-how is already showing results. The software-enabled data pipelines Phil and
+          Andy have built have helped Nottingham University Hospitals NHS Trust become part of
+          multiple real-world evidence studies, turning data into insight at a pace and scale that
+          manual processes couldn&apos;t match.
+        </BodyText>
       </div>
     </section>
   );

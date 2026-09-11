@@ -1,6 +1,7 @@
 import { Gabarito } from "next/font/google";
 import { cn } from "@/src/lib/utils";
 import { Heading, BodyText } from "@/src/components/ui/typography";
+import { Button } from "@/src/components/ui/button";
 
 const font = Gabarito({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -14,25 +15,26 @@ export const CTA = () => {
         <div className={cn("grid grid-cols-1 md:grid-cols-2 gap-12 items-center", font.className)}>
           <div className="text-left">
             <Heading className="text-5xl md:text-7xl mb-6 text-white">
-              Get in Touch
+              Let&apos;s talk
             </Heading>
-            
+
             <BodyText className="text-xl md:text-2xl text-white">
-              Ready to turn your data into an asset? Let&apos;s talk.
+              Tell us what you&apos;re working on, data, software, or something in between, and
+              we&apos;ll tell you how we can help.
             </BodyText>
           </div>
 
           <div className="flex items-center justify-start md:justify-end">
-            <a
-              href="mailto:hello@qurae.co.uk"
-              className="text-2xl md:text-3xl font-semibold text-white dark:text-white hover:text-blue-600 transition-colors underline underline-offset-8 decoration-2 py-8 px-12"
+            <Button
+              asChild
+              size="lg"
+              className="bg-[#14b8a6] text-[#0f172a] hover:bg-[#14b8a6]/90 text-lg md:text-xl h-auto px-8 py-6"
             >
-              hello@qurae.co.uk
-            </a>
+              <a href="mailto:hello@qurae.co.uk">hello@qurae.co.uk</a>
+            </Button>
           </div>
         </div>
       </div>
     </section>
   );
 };
-
