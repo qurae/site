@@ -86,7 +86,7 @@ export default function DataPage() {
         <ProductPageHero
           eyebrow="Data Partnership"
           title="Turn your data into a trusted research asset"
-          description="The NHS Ten Year Plan names data as one of the enabling technologies behind its reform, and the national AI strategy is asking for greater provenance in the data organisations use. That means navigating international standards and federated networks. It&apos;s daunting for any single organisation, and a team that can do it is hard to recruit and harder to retain. Organisations that aren&apos;t connected to national and international research programmes don&apos;t just miss the network. They miss the funding that comes with being part of it. We help you get connected and included while you stay in control, bringing that capability directly into your team at pace, without adding headcount, and with a route into one of the UK&apos;s leading health data networks."
+          description="The NHS Ten Year Plan names data as one of the enabling technologies behind its reform, but the team to do it well is hard to recruit and harder to retain. Organisations that aren&apos;t connected miss more than the network, they miss the funding that comes with it. We bring that capability directly into your team, at pace, without adding headcount, while you stay in control."
         />
 
         <FeatureGrid
