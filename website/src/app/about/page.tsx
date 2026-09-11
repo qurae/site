@@ -39,7 +39,7 @@ export default function AboutPage() {
               <p className="text-[#14b8a6] uppercase tracking-widest text-sm font-semibold mb-4">
                 About Qurae
               </p>
-              <Heading className="text-4xl md:text-6xl mb-6 text-white">
+              <Heading className="text-4xl md:text-5xl mb-8 text-white">
                 Engage our team, don't recruit your own
               </Heading>
               <BodyText className="text-lg md:text-xl text-white/80 mb-0">
