@@ -33,7 +33,7 @@ export default function AboutPage() {
     <>
       <Header />
       <main className="pt-24">
-        <section className="py-24 px-6 lg:px-8 border-b border-white">
+        <section className="py-32 px-6 lg:px-8 border-b border-white">
           <div className="mx-auto max-w-5xl">
             <div className={cn("text-left", font.className)}>
               <p className="text-[#14b8a6] uppercase tracking-widest text-sm font-semibold mb-4">
