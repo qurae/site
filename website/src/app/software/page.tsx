@@ -54,7 +54,7 @@ export default function SoftwarePage() {
         <ProductPageHero
           eyebrow="Software Partnership"
           title="Led by the people who ship it"
-          description="Phil and Andy, Qurae&apos;s founders, are software developers in their day jobs at the University of Nottingham &mdash; the team behind tools like Carrot and Bunny, already running inside NHS and academic environments to enable the safe, secure use of sensitive data in research. Qurae is how you work with that expertise: we&apos;re looking for partnerships that excite and accelerate research, and we want to work with the best software providers to drive impact together."
+          description="Phil and Andy, Qurae&apos;s founders, are software developers in their day jobs at the University of Nottingham. They built tools like Carrot and Bunny, both already running inside NHS and academic environments to support the safe, secure use of sensitive data in research. Qurae is how you work with that expertise. If you&apos;re building software for this space, we want to talk to you."
         />
 
         <FeatureGrid
@@ -71,7 +71,7 @@ export default function SoftwarePage() {
 
         <CtaBand
           heading="Ready to accelerate research together?"
-          subtext="Tell us what you're building, and we'll tell you where it fits &mdash; in our programmes, alongside our founders, or just with our advice."
+          subtext="Tell us what you're building, and we'll tell you where it fits: in our programmes, alongside our founders, or just with our advice."
         />
       </main>
       <Footer />

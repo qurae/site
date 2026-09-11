@@ -39,8 +39,8 @@ const services = [
 
 const differentiators = [
   {
-    title: "An Embedded Team, Not a Report",
-    description: "We work as an extension of your team, not a set of recommendations you're left to implement alone.",
+    title: "An Embedded Team",
+    description: "We sit inside your team and do the work directly, rather than handing you a report and stepping back.",
   },
   {
     title: "A National Network, Ready to Open",

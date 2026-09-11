@@ -84,7 +84,7 @@ export default function AboutPage() {
         </section>
 
         <CtaBand
-          heading="Ready to work with the team, not around it?"
+          heading="Let's talk about working together"
           subtext="Tell us what you're building. We'll tell you how we fit."
         />
       </main>
