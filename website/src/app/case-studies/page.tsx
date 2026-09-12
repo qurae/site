@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Header } from "@/src/components/header";
 import { Footer } from "@/src/components/footer";
 import { ProductPageHero } from "@/src/components/product-page-hero";
@@ -23,7 +24,18 @@ export default function CaseStudiesPage() {
         <ProductPageHero
           eyebrow="Case Studies"
           title="Evidence of impact"
-          description="We don&apos;t just talk about connecting data and technology to national and international research. Our founders have already done it. Here&apos;s some of that work: adapting software to fit a partner&apos;s infrastructure, advising on standards adoption, and helping programmes actually use the data they have."
+          description={
+            <>
+              These are some of our early projects: connecting data and technology to national
+              and international research, in a way that empowers organisations to take part
+              while keeping control. You can read more about the thinking behind this approach
+              in{" "}
+              <Link href="/vision" className="text-[#14b8a6] hover:underline underline-offset-4">
+                our vision
+              </Link>
+              .
+            </>
+          }
         />
 
         <CaseStudy
@@ -34,10 +46,52 @@ export default function CaseStudiesPage() {
             { src: "/images/logos/sde.svg", alt: "London Secure Data Environment" },
           ]}
           paragraphs={[
-            "Metadataworks needed Bunny, our founders' open-source research environment software, to work inside the London Secure Data Environment (London SDE), one of the regional nodes in the NHS Research Secure Data Environment Network. The London SDE's data was hosted in Snowflake. Bunny had no existing way to connect to it.",
-            "We worked with Metadataworks to adapt Bunny so it could connect directly to Snowflake. Researchers inside the London SDE got the same cohort discovery and analysis experience Bunny already provides elsewhere, without anyone needing to migrate the underlying data.",
+            <>
+              <a
+                href="https://bunny.health"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#14b8a6] hover:underline underline-offset-4"
+              >
+                Bunny
+              </a>{" "}
+              is an open-source tool developed by our teams in the University, and is part of
+              the national system from{" "}
+              <a
+                href="https://www.hdruk.ac.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#14b8a6] hover:underline underline-offset-4"
+              >
+                Health Data Research UK
+              </a>
+              . The{" "}
+              <a
+                href="https://onelondon.online/london-secure-data-environment/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#14b8a6] hover:underline underline-offset-4"
+              >
+                London Secure Data Environment
+              </a>{" "}
+              (London SDE) wanted to use Bunny to connect their data to the national cohort
+              discovery service.
+            </>,
+            <>
+              We supported{" "}
+              <a
+                href="https://metadataworks.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#14b8a6] hover:underline underline-offset-4"
+              >
+                Metadataworks
+              </a>
+              , who were supporting the London SDE, to make the necessary changes to Bunny,
+              mainly around the adaptation to enable it to connect to a Snowflake database.
+            </>,
           ]}
-          tags={["Bunny", "Snowflake", "London SDE"]}
+          tags={["Bunny", "Snowflake", "London SDE", "Security & Connection"]}
         />
 
         <CaseStudy
@@ -45,10 +99,23 @@ export default function CaseStudiesPage() {
           title="Advising PRECISE 100K on OMOP, vocabulary and federated connectivity"
           logos={[{ src: "/images/logos/nus.svg", alt: "National University of Singapore" }]}
           paragraphs={[
-            "The National University of Singapore asked us to advise on PRECISE 100K, a large-scale precision medicine cohort. The question was how to adopt the OMOP Common Data Model properly: not just the structure, but how to use the OMOP vocabulary correctly too.",
-            "Beyond the data model itself, we advised on how PRECISE 100K could connect into a federated network, or a similar cohort-to-cohort collaboration model, drawing on our founders' experience building and running federated health data infrastructure in the UK. Our advice was consistent throughout: adopt the standard properly, and build the connections in from the start rather than retrofitting them later.",
+            <>
+              The National University of Singapore asked us to advise on{" "}
+              <a
+                href="https://www.npm.sg/archive/phase-ii-precise-sg100k/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#14b8a6] hover:underline underline-offset-4"
+              >
+                PRECISE 100K
+              </a>
+              , a large-scale precision medicine cohort, on how to adopt the OMOP Common Data
+              Model properly: not just the structure, but the vocabulary that makes it usable
+              across borders.
+            </>,
+            "Beyond the data model itself, we advised on how PRECISE 100K could connect into a federated network, or a similar cohort-to-cohort collaboration model, drawing on our experience in the OHDSI community that maintains OMOP, and on running federated health data infrastructure in the UK. Disease doesn't respect borders, so it tends to help when those connections are considered from the start, rather than added on afterwards.",
           ]}
-          tags={["OMOP", "Vocabulary Mapping", "Federated Networks"]}
+          tags={["OMOP", "Vocabulary Mapping", "Federated Networks", "International by Necessity"]}
         />
 
         <CaseStudy
@@ -56,10 +123,35 @@ export default function CaseStudiesPage() {
           title="Cohort discovery and OMOP conversion for the Dementia Trials Accelerator"
           logos={[{ src: "/images/logos/hdr.svg", alt: "Health Data Research UK" }]}
           paragraphs={[
-            "Health Data Research UK brought us in on the Dementia Trials Accelerator to advise on how Bunny and Carrot, our founders' own tools, could support two connected problems: finding eligible cohorts across datasets, and getting that data into OMOP so it could actually be used.",
-            "We advised on using Bunny for cohort discovery, so the programme could see what data was available and who it could reach, alongside Carrot to convert and map that data into OMOP so it was ready for real analysis and trial recruitment, not just theoretically compliant. Two tools, one pipeline, built and proven by the same team advising on how to use them.",
+            <>
+              <a
+                href="https://www.hdruk.ac.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#14b8a6] hover:underline underline-offset-4"
+              >
+                Health Data Research UK
+              </a>{" "}
+              sought our support for the{" "}
+              <a
+                href="https://web.dementia-trials.healthdatagateway.org/en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#14b8a6] hover:underline underline-offset-4"
+              >
+                Dementia Trials Accelerator
+              </a>{" "}
+              to advise on how to use the Carrot and Bunny tools. The University of Dundee is
+              using Carrot to help with the data curation process, and Bunny is used by HDR UK
+              for their Cohort Discovery Service. We are advising both teams on the best use of
+              the tools, and supporting adaptations to the open-source repositories.
+            </>,
+            "Working with the development team at HDR UK, they are building new search capabilities into their cohort discovery " +
+            "tool that need corresponding changes to the Bunny software. We are supporting their adaptation of Bunny and integrating " +
+            "those changes into the main code repository, so the benefits are there for everyone using it. Better search and discovery, " +
+            "in this case, means researchers can find and reach a wider range of people eligible for dementia trials.",
           ]}
-          tags={["Bunny", "Carrot", "OMOP", "Cohort Discovery"]}
+          tags={["Bunny", "Carrot", "OMOP", "Wider Representation"]}
         />
 
         <CtaBand

@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import Link from "next/link";
 import { Gabarito } from "next/font/google";
 import { cn } from "@/src/lib/utils";
@@ -12,7 +13,7 @@ const font = Gabarito({
 interface ProductPageHeroProps {
   eyebrow: string;
   title: string;
-  description: string;
+  description: ReactNode;
 }
 
 export const ProductPageHero = ({ eyebrow, title, description }: ProductPageHeroProps) => {

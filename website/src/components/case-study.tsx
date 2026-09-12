@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import Image from "next/image";
 import { Gabarito } from "next/font/google";
 import { cn } from "@/src/lib/utils";
@@ -12,7 +13,7 @@ interface CaseStudyProps {
   eyebrow: string;
   title: string;
   logos: { src: string; alt: string }[];
-  paragraphs: string[];
+  paragraphs: ReactNode[];
   tags: string[];
 }
 
