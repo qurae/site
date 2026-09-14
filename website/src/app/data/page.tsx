@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Gabarito } from "next/font/google";
 import { Header } from "@/src/components/header";
 import { Footer } from "@/src/components/footer";
 import { ProductPageHero } from "@/src/components/product-page-hero";
 import { FeatureGrid } from "@/src/components/feature-grid";
 import { ProcessSteps } from "@/src/components/process-steps";
-import { Logos } from "@/src/components/logos";
 import { CtaBand } from "@/src/components/cta-band";
+import { cn } from "@/src/lib/utils";
+import { Heading, BodyText } from "@/src/components/ui/typography";
+
+const font = Gabarito({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Data Partnership — Qurae",
@@ -17,22 +25,41 @@ export const metadata: Metadata = {
   },
 };
 
+const audiences = [
+  {
+    title: "Clinicians & Medical Staff",
+    description: "You want your patients to have the chance to be part of research. We help build the data infrastructure that makes that possible.",
+  },
+  {
+    title: "Real-World Evidence Teams",
+    description: "You're running an RWE study and need to know which organisations' data is actually ready to use, not just theoretically available.",
+  },
+  {
+    title: "Hospitals & New Data Partners",
+    description: "You want to connect your organisation into national and international programmes, and need help with the practical and governance work to get there.",
+  },
+  {
+    title: "Researchers With Existing Data",
+    description: "You've got data in a study already and want to find similar datasets elsewhere to connect with, but don't know the route in.",
+  },
+];
+
 const capabilities = [
   {
     title: "Data Standards & Interoperability",
-    description: "OMOP mapping, FAIR alignment and the standards work that makes your data usable beyond your own walls.",
+    description: "OMOP mapping, FAIR alignment and the standards work that lets your data connect safely across international, federated research networks.",
   },
   {
     title: "Governance & Compliance",
-    description: "Frameworks that speed up safe use of your data, instead of slowing it down.",
+    description: "Connecting does not mean losing control, we help you retain that control whilst still benefitting from being connected into international research data networks",
   },
   {
     title: "AI & Analysis-Ready Platforms",
-    description: "Infrastructure built so your data can be trusted and used with confidence by AI and analytics teams.",
+    description: "There are many options you could select, not all give you the control you may desire, we can help you pick the right platforms that match your desired levels of control",
   },
   {
-    title: "A Route to the Network",
-    description: "Access to one of the UK's leading health data networks, built over 15+ years across academia, the NHS and industry.",
+    title: "The Research Domain, Built In",
+    description: "Direct access to the University of Nottingham's research and research software teams, and to one of the UK's leading health data networks — built for real-world evidence studies and international programmes of research.",
   },
 ];
 
@@ -47,7 +74,7 @@ const steps = [
   },
   {
     title: "Deliver",
-    description: "You end up with trusted, interoperable data, and a direct line into national programmes.",
+    description: "You end up with trusted, interoperable data, connected to national and international programmes, and it's still yours.",
   },
 ];
 
@@ -58,14 +85,55 @@ export default function DataPage() {
       <main className="pt-24">
         <ProductPageHero
           eyebrow="Data Partnership"
-          title="Turn your data into a trusted asset"
-          description="You&apos;re sitting on data you can&apos;t yet put to work. The standards, governance and platform expertise needed to make it trusted, interoperable and AI-ready is hard to hire and harder to retain. We bring that capability directly into your team &mdash; at pace, without adding headcount &mdash; and open a route into one of the UK&apos;s leading health data networks."
-          svg="/animate/circle.svg"
+          title="Turn your data into a trusted research asset"
+          description="The NHS Ten Year Plan names data as one of the enabling technologies behind its reform, but the team to do it well is hard to recruit and harder to retain. Organisations that aren&apos;t connected miss more than the network, they miss the funding that comes with it. We bring that capability directly into your team, at pace, without adding headcount, while you stay in control."
         />
 
         <FeatureGrid
+          eyebrow="Who This Is For"
+          heading="Wherever you're starting from"
+          items={audiences}
+        />
+
+        <section className="py-32 px-6 lg:px-8 border-b border-white">
+          <div className="mx-auto max-w-5xl">
+            <div className={cn("text-left", font.className)}>
+              <p className="text-[#14b8a6] uppercase tracking-widest text-sm font-semibold mb-4">
+                Why It Matters
+              </p>
+              <Heading className="text-4xl md:text-5xl mb-8 text-white">
+                Governance as an enabler for research
+              </Heading>
+              <BodyText className="text-lg md:text-xl text-white">
+                Our founders have done this before, across national programmes with the NHS, Health Data
+                Research UK and the NHS England Secure Data Environment Programme and we
+                bring that knowledge and experience directly into your organisation.
+              </BodyText>
+              <BodyText className="text-lg md:text-xl text-white">
+                Where it helps, we bring in the University of Nottingham&apos;s own research and
+                research software teams too, so what you build works for the research domain, not
+                just the technical platform: real-world evidence studies, international
+                programmes of research, and the standards they run on.
+              </BodyText>
+              <BodyText className="text-lg md:text-xl text-white">
+                If you&apos;re an NHS organisation, this is also about your patients. Data that
+                isn&apos;t standards-ready and connected is research your patients can&apos;t be
+                included in. We partner with you through every step of getting there, and the
+                data stays yours throughout.
+              </BodyText>
+              <Link
+                href="/case-studies"
+                className="inline-flex items-center gap-2 text-[#14b8a6] font-semibold hover:underline underline-offset-4"
+              >
+                See it in action in our case studies &rarr;
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <FeatureGrid
           eyebrow="What We Bring"
-          heading="Capability you can't easily hire"
+          heading="Capability you can't easily recruit"
           items={capabilities}
         />
 
@@ -75,11 +143,9 @@ export default function DataPage() {
           steps={steps}
         />
 
-        <Logos />
-
         <CtaBand
-          heading="Ready to see what your data could become?"
-          subtext="Let's talk about where you are today, and what a trusted, AI-ready asset would look like."
+          heading="Ready to be included?"
+          subtext="Tell us where you're starting from, as a clinician, a study lead, a new partner, or a researcher with data already, and we'll show you the route in without losing control of what's yours."
         />
       </main>
       <Footer />

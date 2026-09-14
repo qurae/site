@@ -17,13 +17,13 @@ export const Banner = () => {
         <div className="px-6 lg:px-8 w-full">
           <div className="mx-auto max-w-5xl">
             <div className="text-left">
-              <h1 className={cn("text-white text-5xl md:text-6xl font-bold drop-shadow-lg mb-6", font.className)}>
-                Driving Impact<br /> From Your Data
+              <h1 className={cn("text-white text-5xl md:text-6xl font-bold drop-shadow-lg mb-6 md:whitespace-nowrap", font.className)}>
+                Driving Impact From Your Data
               </h1>
               <p className={cn("text-white text-xl md:text-2xl font-light drop-shadow-lg mb-8", font.className)}>
-                Connecting national strategy to local delivery.
+                Connected. Included. In control.
               </p>
-              <Button asChild size="lg" className={cn("bg-[#14b8a6] text-white hover:bg-[#14b8a6]/90", font.className)}>
+              <Button asChild size="lg" className={cn("bg-[#14b8a6] text-[#0f172a] hover:bg-[#14b8a6]/90", font.className)}>
                 <Link href="/contact">Get in Touch</Link>
               </Button>
             </div>
