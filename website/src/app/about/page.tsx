@@ -44,7 +44,7 @@ export default function AboutPage() {
               </Heading>
               <BodyText className="text-lg md:text-xl text-white/80 mb-0">
                 Qurae is a University of Nottingham spinout, founded by Phil Quinlan and Andy Rae
-                &mdash; two directors with 15+ years inside the NHS and academia, and the strong 
+                &mdash; two directors with 15+ years inside the NHS and academia, and a strong 
                 international research network. We want to help connect the data in your organisation to 
                 enable opportunity with control.
               </BodyText>

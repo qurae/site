@@ -51,7 +51,7 @@ const capabilities = [
   },
   {
     title: "Governance & Compliance",
-    description: "Connecting does not mean losing control, and there are approaches that ensure we help you retain that control whilst still benefitting from being connected into international research data networks",
+    description: "Connecting does not mean losing control, we help you retain that control whilst still benefitting from being connected into international research data networks",
   },
   {
     title: "AI & Analysis-Ready Platforms",

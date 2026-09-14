@@ -34,7 +34,7 @@ const beliefs = [
   },
   {
     title: "International by Necessity",
-    description: "Disease doesn't respect borders, and so we need mechansims that respects controls and allows international insights to be learned. We work with partners across the UK and internationally, including the OHDSI community that maintains the OMOP standard, because the biggest questions usually need data from more than one country.",
+    description: "Disease doesn't respect borders, and so we need mechanisims that respect controls and allows international insights to be learned. We work with partners across the UK and internationally, including the OHDSI community that maintains the OMOP standard, because the biggest questions usually need data from more than one country.",
   },
   {
     title: "Security and Connection, Together",
